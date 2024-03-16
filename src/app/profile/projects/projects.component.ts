@@ -9,8 +9,8 @@ export class ProjectsComponent implements OnInit {
 
 
   sh: any;
-  isChecked: boolean = false;
-  ToDO: boolean = false;
+  isChecked: boolean = true;
+  ToDO: boolean = true;
   SM: boolean = false;
  
   constructor() { }
@@ -20,7 +20,7 @@ export class ProjectsComponent implements OnInit {
     this.ToDO = true;
   }
 
-  ProjectList(event:any) {
+  ProjectList(event: any) {
     if (event.target['name'] == 'ToDo') {
       this.ToDO = true;
       this.SM = false

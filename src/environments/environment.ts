@@ -6,11 +6,6 @@
 
 export const environment = {
   production: false,
-  // baseUrl : `${window.location.protocol}//${window.location.hostname}/portfolio/`,
-  baseUrl : `http://localhost:4200/`,
 
-  // snotifyConfig : {
-  //   showProgressBar: true,
-  //   position: SnotifyPosition.rightTop,
-  // },
+  footerContent1: 'Powered by Angular: 16'
 };

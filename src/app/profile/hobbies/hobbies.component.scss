@@ -8,5 +8,78 @@ b {
 
 .card-body {
     background-color: darkcyan;
+    .music {
+        .fa-music {
+            font-size: 320%;
+        }
+        b {
+            font-size: 14px;
+        }
+    }
 }
 
+.card-body {
+    background-color: darkcyan;
+    .travel {
+        .fa-bus {
+            font-size: 320%;
+        }
+        b {
+            font-size: 14px;
+          
+        }
+    }
+}
+
+.card-body {
+    background-color: darkcyan;
+    .photography {
+        .fa-camera {
+            font-size: 320%;
+        }
+        b {
+            font-size: 13.5px;
+            // word-wrap: break-word;
+        }
+    }
+}
+
+.card-body {
+    background-color: darkcyan;
+    .coding {
+        b {
+            font-size: 13.5px;
+            // word-wrap: break-word;
+        }
+    }
+}
+
+.card-body {
+    background-color: darkcyan;
+    .volleyball {
+        .fa-volleyball-ball {
+            font-size: 320%;
+        }
+        b {
+            font-size: 13.5px;
+            // word-wrap: break-word;
+        }
+    }
+}
+
+.card-body {
+    background-color: darkcyan;
+    .game {
+        .fa-gamepad {
+            font-size: 320%;
+        }
+        b {
+            font-size: 13.5px;
+            // word-wrap: break-word;
+        }
+    }
+}
+
+.card-body:hover {
+   color: whitesmoke;
+  }
