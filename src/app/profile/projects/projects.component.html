@@ -6,8 +6,8 @@
             <div class="col-lg-10 col-md-12" data-aos="fade-right">
                 <div class="card-body">
                     <div class="projects">
-                        <div class="row justify-content-center">
-                            <div class="form-check">
+                        <div class="row text-center">
+                            <div class="form-check col-md-9">
                                 <input class="form-check-input" type="radio"
                                     [(ngModel)]="sh" name="sh"
                                     id="exampleRadios1" [value]="1"
@@ -16,9 +16,7 @@
                                     for="exampleRadios1">
                                     Angular
                                 </b>
-                            </div>
-                            <div class="col-md-2">
-                                <b>
+                                <b class="mx-2">
                                     <input [value]="0" [(ngModel)]="sh"
                                         name="sh" type="radio"
                                         [checked]="!isChecked" />
@@ -26,10 +24,6 @@
                                 </b>
                             </div>
                         </div>
-                        <!-- <label>
-                                <input [value]="2" [(ngModel)]="sh" name="sh" type="radio"
-                                    [checked]="!isChecked" /> HTML & CSS
-                            </label> -->
                     </div>
                 </div>
             </div>

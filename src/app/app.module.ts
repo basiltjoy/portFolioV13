@@ -9,22 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { NotificationModule } from '@progress/kendo-angular-notification';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-
-
-
-
-
-const routes: Routes = [
-  {
-    path: '',
-    component: ProfileComponent
-  }
-];
-
-const config: ExtraOptions = {
-  useHash: true,
-};
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -34,7 +19,7 @@ const config: ExtraOptions = {
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule.forRoot(routes, config),
+    AppRoutingModule,
     ProfileModule,
     HttpClientModule,
     NotificationModule,
