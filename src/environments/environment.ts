@@ -7,6 +7,7 @@
 export const environment = {
   production: false,
 
+
   
   footerContent1: 'Powered by Angular: 16'
 };
