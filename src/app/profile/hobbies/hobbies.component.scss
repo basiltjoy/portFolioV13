@@ -1,104 +1,77 @@
-.card {
-    height: 115px;
-}
-
-b {
-    font-weight: bolder;
-}
-
-.card-body {
+#grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 5px;
+  }
+  #grid > div {
+    font-size: 20px;
+    padding: 0.5em;
+    // color: #ffffff;
     background-color: darkcyan;
-
-    .music {
-        .fa-music {
-            font-size: 320%;
-        }
-
-        b {
-            font-size: 14px;
-        }
-    }
-}
-
-.card-body {
-    background-color: darkcyan;
-
-    .travel {
-        .fa-bus {
-            font-size: 320%;
-        }
-
-        b {
-            font-size: 14px;
-        }
-    }
-}
-
-.card-body {
-    background-color: darkcyan;
-
-    .photography {
-        .fa-camera {
-            font-size: 320%;
-        }
-
-        b {
-            font-size: 13.5px;
-            // word-wrap: break-word;
-        }
-    }
-}
-
-.card-body {
-    background-color: darkcyan;
-
-    .coding {
-        b {
-            font-size: 13.5px;
-            // word-wrap: break-word;
-        }
-    }
-}
-
-.card-body {
-    background-color: darkcyan;
-
-    .volleyball {
-        .fa-volleyball-ball {
-            font-size: 320%;
-        }
-
-        b {
-            font-size: 13.5px;
-            // word-wrap: break-word;
-        }
-    }
-}
-
-.card-body {
-    background-color: darkcyan;
-
-    .game {
-        .fa-gamepad {
-            font-size: 320%;
-        }
-
-        b {
-            font-size: 13.5px;
-            // word-wrap: break-word;
-        }
-    }
-}
-
-svg {
-    width: 50px;
-    height: 45px;
-}
-
-.card-body:hover {
+    text-align: center;
+  }
+  #grid > div > b {
+    font-size: 22px;
+  }
+  
+  // music //
+  #grid > .music:hover {
     color: whitesmoke;
-}
-
-.card-body:hover svg {
-    fill: whitesmoke;
-}
+  }
+  #grid > .music > .fa-music {
+    font-size: 200%;
+  }
+  
+  // travel //
+  #grid > .travel:hover {
+    color: whitesmoke;
+  }
+  #grid > .travel > .fa-bus {
+    font-size: 200%;
+  }
+  
+  // photography //
+  #grid > .photography:hover {
+    color: whitesmoke;
+  }
+  #grid > .photography > .fa-camera {
+    font-size: 200%;
+  }
+  
+  // coding //
+  #grid > .coding:hover {
+    color: whitesmoke;
+  }
+  #grid > .coding > .fa-code {
+    font-size: 200%;
+  }
+  
+  // volleyball //
+  #grid > .volleyball:hover {
+    color: whitesmoke;
+  }
+  #grid > .volleyball > .fa-volleyball-ball {
+    font-size: 200%;
+  }
+  
+  // game //
+  #grid > .game:hover {
+    color: whitesmoke;
+  }
+  #grid > .game > .fa-gamepad {
+    font-size: 200%;
+  }
+  
+  // game //
+  #grid > .fitness:hover {
+    color: whitesmoke;
+  }
+  #grid > .fitness:hover {
+      fill: whitesmoke; 
+  }
+  #grid > .game > svg{
+    font-size: 200%;
+  }
+  
+  
+  
