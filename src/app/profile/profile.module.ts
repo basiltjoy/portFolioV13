@@ -15,6 +15,7 @@ import { HobbiesComponent } from './hobbies/hobbies.component';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { ProjectsComponent } from './projects/projects.component';
 import { ReferenceComponent } from './reference/reference.component';
+import { TogglerComponent } from './toggler/toggler.component';
 
 
 @NgModule({
@@ -37,11 +38,11 @@ import { ReferenceComponent } from './reference/reference.component';
     SkillsComponent,
     HobbiesComponent,
     ProjectsComponent,
-    ReferenceComponent
+    ReferenceComponent,
+    TogglerComponent
   ],
   providers: [
-    // { provide: 'SnotifyToastConfig', useValue: ToastDefaults},
-    // SnotifyService,
+   
   ]
 })
 export class ProfileModule { }

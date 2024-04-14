@@ -63,14 +63,11 @@
     font-size: 200%;
   }
   
-  // game //
+  // fitness //
   #grid > .fitness:hover {
     color: whitesmoke;
   }
-  #grid > .fitness:hover {
-      fill: whitesmoke; 
-  }
-  #grid > .game > svg{
+  #grid > .fitness > .fa-heartbeat{
     font-size: 200%;
   }
   
