@@ -12,7 +12,8 @@ export class ProjectsComponent implements OnInit {
   isChecked: boolean = true;
   ToDO: boolean = true;
   SM: boolean = false;
- 
+  MD: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -24,9 +25,16 @@ export class ProjectsComponent implements OnInit {
     if (event.target['name'] == 'ToDo') {
       this.ToDO = true;
       this.SM = false
+      this.MD = false;
     }
-    else {
+    else if (event.target['name'] == 'SM') {
       this.SM = true
+      this.ToDO = false;
+      this.MD = false;
+    }
+    else if (event.target['name'] == 'MD') {
+      this.MD = true;
+      this.SM = false
       this.ToDO = false;
     }
   }
