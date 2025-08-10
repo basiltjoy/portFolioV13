@@ -108,6 +108,7 @@
               {
                 "input": "node_modules/@progress/kendo-theme-default/dist/all.css"
               },
+              "src/assets/css/aos.css",
               "src/styles.scss"
             ],
             "scripts": []
