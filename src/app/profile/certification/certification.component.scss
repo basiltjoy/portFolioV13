@@ -1,4 +1,31 @@
 .certificate-img {
-  max-width: 500px;
+  max-width: 200px;
   height: auto;
+  transform: scale(1.02);
+}
+
+.border_Class {
+  border-style: ridge;
+  border-width: 1.6px;
+  border-color: #4c9f4f;
+  box-shadow: 0 4px 10px rgba(198, 239, 168, 0.2);
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+/* WebKit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #141c15;
+  border-radius: 4px;
+  border: 2px solid #f1f1f1;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #5cae57;
 }

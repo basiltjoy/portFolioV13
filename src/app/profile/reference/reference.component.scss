@@ -25,3 +25,8 @@ h2 {
     transition: -webkit-transform 2s ease;
     transition: transform 2.6s ease-in-out;
 }
+
+.carousel-item {
+  height: 400px;
+  overflow: hidden;
+}
