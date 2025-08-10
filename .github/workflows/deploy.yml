@@ -5,6 +5,9 @@ on:
     branches:
       - master
 
+permissions:
+  contents: write   # Required so the action can push to gh-pages branch
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -22,13 +25,17 @@ jobs:
 
       # Step 3: Install dependencies
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
 
-      # Step 4: Build Angular app for production
+      # Step 4: Install Angular CLI globally (ensures ng command works)
+      - name: Install Angular CLI
+        run: npm install -g @angular/cli
+
+      # Step 5: Build Angular app for production
       - name: Build Angular App
-        run: npm run build -- --configuration production --base-href /portFolioV13/
+        run: ng build --configuration production --base-href /portFolioV13/
 
-      # Step 5: Deploy to GitHub Pages
+      # Step 6: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
