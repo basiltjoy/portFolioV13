@@ -16,6 +16,7 @@ import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { ProjectsComponent } from './projects/projects.component';
 import { ReferenceComponent } from './reference/reference.component';
 import { TogglerComponent } from './toggler/toggler.component';
+import { CertificationComponent } from './certification/certification.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { TogglerComponent } from './toggler/toggler.component';
     HobbiesComponent,
     ProjectsComponent,
     ReferenceComponent,
-    TogglerComponent
+    TogglerComponent,
+    CertificationComponent
   ],
   providers: [
    
