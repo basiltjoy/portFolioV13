@@ -1,4 +1,4 @@
-name: Deploy Angular to GitHub Pages
+name: Deploy Angular App to GitHub Pages
 
 on:
   push:
@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout source code
-      - name: Checkout repository
+      # Step 1: Checkout code
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
       # Step 2: Setup Node.js
@@ -21,16 +21,16 @@ jobs:
           node-version: 18
 
       # Step 3: Install dependencies
-      - name: Install dependencies
+      - name: Install Dependencies
         run: npm install
 
-      # Step 4: Build Angular project for production
-      - name: Build project
+      # Step 4: Build Angular app for production
+      - name: Build Angular App
         run: npm run build -- --configuration production --base-href /portFolioV13/
 
       # Step 5: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages           # The branch where files will be deployed
-          folder: dist/portFolioV13  # Output folder from Angular build
+          branch: gh-pages
+          folder: dist/portFolioV13
