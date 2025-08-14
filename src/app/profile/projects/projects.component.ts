@@ -10,7 +10,7 @@ export class ProjectsComponent implements OnInit {
 
   sh: any;
   isChecked: boolean = true;
-  ToDO: boolean = true;
+  ToDO: boolean = false;
   SM: boolean = false;
   MD: boolean = false;
 
@@ -18,7 +18,7 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit(): void {
     this.sh = 1
-    this.ToDO = true;
+    this.MD = true;
   }
 
   ProjectList(event: any) {

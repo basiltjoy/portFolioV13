@@ -28,14 +28,15 @@
                 <!-- ANGULAR-->
                 <div class="col-lg-10 col-md-10">
                     <div class="text-center purple" *ngIf="sh == 1">
+                        <input type="checkbox" name="MD" [(ngModel)]="MD" id="" (change)="ProjectList($event)"
+                            style="margin-left: 6px;"> Mediclinic Dashboard
+                            
                         <input type="checkbox" name="ToDo" [(ngModel)]="ToDO" id="" (change)="ProjectList($event)">
                         Todo Project
 
                         <input type="checkbox" name="SM" [(ngModel)]="SM" id="" (change)="ProjectList($event)"
                             style="margin-left: 6px;"> Student Management Project
 
-                        <input type="checkbox" name="MD" [(ngModel)]="MD" id="" (change)="ProjectList($event)"
-                            style="margin-left: 6px;"> Mediclinic Dashboard
 
                         <div *ngIf="MD" class="Mediclinic">
                             <a href="https://basiltjoy.github.io/MediClinic_Dashboard/" target="_blank">
