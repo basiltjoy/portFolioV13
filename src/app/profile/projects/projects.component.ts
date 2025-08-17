@@ -14,8 +14,9 @@ export class ProjectsComponent implements OnInit {
   SM: boolean = false;
   MD: boolean = false;
   chat: boolean = false;
-  
-  constructor() { }
+
+  constructor() { 
+  }
 
   ngOnInit(): void {
     this.sh = 1
