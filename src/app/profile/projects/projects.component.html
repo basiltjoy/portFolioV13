@@ -30,13 +30,18 @@
                     <div class="text-center purple" *ngIf="sh == 1">
                         <input type="checkbox" name="MD" [(ngModel)]="MD" id="" (change)="ProjectList($event)"
                             style="margin-left: 6px;"> Mediclinic Dashboard
-                            
-                        <input type="checkbox" name="ToDo" [(ngModel)]="ToDO" id="" (change)="ProjectList($event)">
-                        Todo Project
+                        
+                        <input type="checkbox" name="chat" [(ngModel)]="chat" id="" (change)="ProjectList($event)"
+                            style="margin-left: 6px;"> ChatBot Project
+                        
+                        <input type="checkbox" name="ToDo" [(ngModel)]="ToDO" id="" (change)="ProjectList($event)"
+                            style="margin-left: 6px;">Todo Project
 
                         <input type="checkbox" name="SM" [(ngModel)]="SM" id="" (change)="ProjectList($event)"
                             style="margin-left: 6px;"> Student Management Project
 
+
+  
 
                         <div *ngIf="MD" class="Mediclinic">
                             <a href="https://basiltjoy.github.io/MediClinic_Dashboard/" target="_blank">
@@ -64,6 +69,46 @@
                                             onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">Close</a>
                                     </div>
                                     <div id="fade" class="black_overlay"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div *ngIf="chat"  class="chatBot">
+                            <div>
+                                <video controls width="100%" style="max-width: 800px;">
+                                    <source src="assets/chatBot.mp4" type="video/mp4">
+                                    Your browser does not support the video element.
+                                </video>
+                            </div>   
+
+                            <div class="row">
+                                <div class="container">
+                                    <p>To know the project details click
+                                        <a href="javascript:void(0)"
+                                            onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">here</a>
+                                    </p>
+                                    <div id="light" class="white_content">
+                                        This is a chatbot demo built with Angular 15, leveraging the Gemini API to provide intelligent responses to 
+                                        user queries.
+                                        Demo video is included using ngx-videogular
+                                        <br>
+                                        <span class="mt-1">
+                                            Github Repo: 
+                                            <a href="https://github.com/basiltjoy/ChatBot.git" target="_blank">click here</a>
+                                        </span>
+                                        <br>
+                                        <small class="text-danger">
+                                            (Note: The repository only contains the project code. 
+                                            API keys and configuration details are confidential and not included.)
+                                        </small>
+                                        <br>
+                                        <a href="javascript:void(0)"
+                                            onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">
+                                            Close
+                                        </a>
+                                    </div>
+
+                                    <div id="fade" class="black_overlay" style="margin-left: 1rem !important;"></div>
                                 </div>
                             </div>
                         </div>

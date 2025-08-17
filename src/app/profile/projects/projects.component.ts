@@ -13,7 +13,8 @@ export class ProjectsComponent implements OnInit {
   ToDO: boolean = false;
   SM: boolean = false;
   MD: boolean = false;
-
+  chat: boolean = false;
+  
   constructor() { }
 
   ngOnInit(): void {
@@ -22,22 +23,24 @@ export class ProjectsComponent implements OnInit {
   }
 
   ProjectList(event: any) {
-    if (event.target['name'] == 'ToDo') {
-      this.ToDO = true;
-      this.SM = false
-      this.MD = false;
-    }
-    else if (event.target['name'] == 'SM') {
-      this.SM = true
-      this.ToDO = false;
-      this.MD = false;
-    }
-    else if (event.target['name'] == 'MD') {
-      this.MD = true;
-      this.SM = false
-      this.ToDO = false;
+    this.ToDO = this.SM = this.MD = this.chat = false;
+
+    switch (event.target['name']) {
+      case 'ToDo':
+        this.ToDO = true;
+        break;
+      case 'SM':
+        this.SM = true;
+        break;
+      case 'MD':
+        this.MD = true;
+        break;
+      case 'chat':
+        this.chat = true;
+        break;
     }
   }
+
 
 
 }

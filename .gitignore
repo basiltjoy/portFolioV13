@@ -40,3 +40,8 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Ignore videos
+*.mp4
+*.avi
+*.mov
