@@ -15,10 +15,10 @@
                                 <b class="form-check-label" for="exampleRadios1">
                                     Angular
                                 </b>
-                                <b class="mx-2">
+                                <!-- <b class="mx-2">
                                     <input [value]="0" [(ngModel)]="sh" name="sh" type="radio" [checked]="!isChecked" />
                                     Javascript
-                                </b>
+                                </b> -->
                             </div>
                         </div>
                     </div>
@@ -28,20 +28,27 @@
                 <!-- ANGULAR-->
                 <div class="col-lg-10 col-md-10">
                     <div class="text-center purple" *ngIf="sh == 1">
-                        <input type="checkbox" name="MD" [(ngModel)]="MD" id="" (change)="ProjectList($event)"
-                            style="margin-left: 6px;"> Mediclinic Dashboard
-                        
-                        <input type="checkbox" name="chat" [(ngModel)]="chat" id="" (change)="ProjectList($event)"
-                            style="margin-left: 6px;"> ChatBot Project
-                        
-                        <input type="checkbox" name="ToDo" [(ngModel)]="ToDO" id="" (change)="ProjectList($event)"
-                            style="margin-left: 6px;">Todo Project
+                        <div class="d-flex flex-wrap justify-content-center">
+                            <div class="form-check mx-2">
+                                <input class="form-check-input" type="checkbox" name="MD" [(ngModel)]="MD" (change)="ProjectList($event)">
+                                <label class="form-check-label">Mediclinic Dashboard</label>
+                            </div>
 
-                        <input type="checkbox" name="SM" [(ngModel)]="SM" id="" (change)="ProjectList($event)"
-                            style="margin-left: 6px;"> Student Management Project
+                            <div class="form-check mx-2">
+                                <input class="form-check-input" type="checkbox" name="chat"[(ngModel)]="chat" (change)="ProjectList($event)">
+                                <label class="form-check-label">ChatBot</label>
+                            </div>
 
+                            <div class="form-check mx-2">
+                                <input class="form-check-input" type="checkbox" name="ToDo" [(ngModel)]="ToDO" (change)="ProjectList($event)">
+                                <label class="form-check-label">To-Do App</label>
+                            </div>
 
-  
+                            <!-- <div class="form-check mx-2">
+                                <input class="form-check-input" type="checkbox" name="SM" [(ngModel)]="SM" (change)="ProjectList($event)">
+                                <label class="form-check-label">Student Management</label>
+                            </div> -->
+                        </div>
 
                         <div *ngIf="MD" class="Mediclinic">
                             <a href="https://basiltjoy.github.io/MediClinic_Dashboard/" target="_blank">
@@ -155,7 +162,7 @@
                             </div>
                         </div>
 
-                        <div *ngIf="SM">
+                        <!-- <div *ngIf="SM">
                             <a href="https://basiltjoy.github.io/StudentManagement/" target="_blank">
                                 <img src="assets/images/Student-Management-System.jpg"
                                     alt="none">
@@ -191,7 +198,7 @@
                                     <div id="fade" class="black_overlay" style="margin-left: 1rem !important;"></div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>
